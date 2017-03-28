@@ -53,22 +53,6 @@ model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['ac
 model.fit(train_data, labels, batch_size=32, verbose=1, validation_split=0.0, epochs=int(epochs))
 
 if len(sys.argv) == 5 and sys.argv[4] == "test":
-	test_file = "move_record3#S22E2.csv"
-	reader = csv.reader(open(test_file, newline=''), delimiter=',')
-	test_data = []
-	for row in reader:
-		test_data.append([int(x) for x in row])
-	x = numpy.array(test_data)
-	y = x[:,x.shape[1]-1]
-	x = numpy.delete(x, x.shape[1]-1, axis=1)
-	y_test = keras.utils.to_categorical(y, num_classes=24)
-	x_test = x
-	loss, acc = model.evaluate(x_test, y_test, batch_size=32, verbose=1)
-	print ("\n" + test_file + "- stats")
-	print ("loss = " + str(loss))
-	print ("acc = " + str(acc))
-
-	# Next test file
 	test_file = "move_record3#03E2.csv"
 	reader = csv.reader(open(test_file, newline=''), delimiter=',')
 	test_data = []
@@ -83,6 +67,7 @@ if len(sys.argv) == 5 and sys.argv[4] == "test":
 	print ("\n" + test_file + "- stats")
 	print ("loss = " + str(loss))
 	print ("acc = " + str(acc))
+
 print (model.summary())
 
 model_json = model.to_json()
