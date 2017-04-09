@@ -1,5 +1,5 @@
 # ShallowBlue - AI for Boxes Dots, Inspired by AlphaGo
-This AI was made using Keras, Tensorflow backend, a neural network (24 -> 400 -> 24), and the minimax algorithm.
+This AI was made using Keras, TensorFlow backend, a neural network (24 -> 400 -> 24), and the minimax algorithm.
 
 Sucessfuly beat my Mom & Dad in a best of three games!! :)
 
