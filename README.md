@@ -1,7 +1,7 @@
-# KerasAIBoxesDots
-Keras NN trained by minimax to play Boxes &amp; Dots
+# ShallowBlue - AI for Boxes Dots, Inspired by AlphaGo
+This AI was made using Keras, Tensorflow backend, a neural network (24 -> 400 -> 24), and the minimax algorithm.
 
-Sucessfuly beat my Mom in a best of three!! :)
+Sucessfuly beat my Mom & Dad in a best of three games!! :)
 
 83% accuracy emulating a minimax of depth 5.
 
