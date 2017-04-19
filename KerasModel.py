@@ -16,7 +16,7 @@ from keras.models import Sequential, model_from_json
 
 class KerasAI(Player):
 	def __init__(self, grid_size):
-		Player.__init__(self, "Mali AI")
+		Player.__init__(self, "Shallow Blue AI")
 		self.grid_size = grid_size
 		self.helperAI = Minimax(grid_size, 0, False)
 		json_file = open('model.json', 'r')
