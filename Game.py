@@ -22,7 +22,7 @@ def main():
 	mode = int(input("Player 1 is?\n You (0) | Minimax (1): "))
 	if mode == 1:
 		base = input("Minimax bonus depth: ")
-	mode2 = int(input("Who are you playing?\n Keras AI \"Mali\" (0) | Minimax (1) | Player (2): "))
+	mode2 = int(input("Who are you playing?\n Shallow Blue AI (0) | Minimax (1) | Player (2): "))
 	if mode2 == 1:
 		base2 = int(input("Minimax bonus depth: "))
 	
