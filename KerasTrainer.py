@@ -7,7 +7,7 @@
 
 import sys, csv, numpy
 import keras
-from keras.utils import np_utils
+from keras.utils import * 
 from keras.models import Sequential, model_from_json
 from keras.layers import Dense, Activation
 
